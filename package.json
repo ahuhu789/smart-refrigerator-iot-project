@@ -1,0 +1,37 @@
+{
+  "name": "smart-refrigerator-iot-simulator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Smart Refrigerator Interactive 3D IoT Simulator - React + Vite + TypeScript + Three.js + R3F + Zustand + Recharts + MQTT.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sim:esp32": "node esp32_mqtt_simulator.js cycle",
+    "sim:alarm": "node esp32_mqtt_simulator.js alarm",
+    "sim:freeze": "node esp32_mqtt_simulator.js freeze"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.105.0",
+    "@react-three/fiber": "^8.16.0",
+    "lucide-react": "^0.378.0",
+    "mqtt": "^5.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "three": "^0.164.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.164.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
